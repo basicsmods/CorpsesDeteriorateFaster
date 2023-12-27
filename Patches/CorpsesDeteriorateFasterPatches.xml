@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>basics.corpsesdeterioratefaster</modId>
+		<key>FullModToggle</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="XmlExtensions.AggregateValues">
+				<valueOperations>
+					<Operation Class="XmlExtensions.UseSetting">
+						<modId>basics.corpsesdeterioratefaster</modId>
+						<key>RaidEnemyWeight</key>
+						<defaultValue>7.4</defaultValue>
+					</Operation>
+					
+				</valueOperations>
+
+            	<apply>
+					<Operation Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Ammo_762x51mmNATO_HP"]/statBases</xpath>
+							<value>
+								<DeteriorationRate>20</DeteriorationRate>
+							</value>
+					</Operation>
+					
+
+				</apply>
+        	</Operation>
+		</caseTrue>
+	</Operation>
+
+
+</Patch>
+	

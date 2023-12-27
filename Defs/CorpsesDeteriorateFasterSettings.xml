@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<XmlExtensions.SettingsMenuDef>
+	<defName>CorpsesDeteriorateFaster</defName>
+	<modId>basics.corpsesdeterioratefaster</modId>
+	<label>CorpsesDeteriorateFaster</label>
+<settings>
+
+	<li Class="XmlExtensions.Setting.Text">
+		<text>CorpsesDeteriorateFaster</text>
+		<font>Medium</font>
+		<anchor>Middle</anchor>
+	</li>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>by basics</text>
+		<font>Small</font>
+		<anchor>Middle</anchor>
+	</li>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>https://steamcommunity.com/id/basicspat</text>
+		<font>Tiny</font>
+		<anchor>Middle</anchor>
+	</li>
+	<li Class="XmlExtensions.Setting.GapLine"/>
+	<li Class="XmlExtensions.Setting.SetColor">
+		<color>(255,255,0)</color>
+	</li>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>IMPORTANT! Restart or reload game for any changes to take effect.</text>
+		<anchor>Middle</anchor>
+	</li>
+	<li Class="XmlExtensions.Setting.SetColor">
+		<color>(255,255,255)</color>
+	</li>
+
+		<li Class="XmlExtensions.Setting.Checkbox">
+            <label>Enable Mod?</label>
+            <key>FullModToggle</key>
+            <defaultValue>true</defaultValue>
+        </li>
+
+	<li Class="XmlExtensions.Setting.GapLine"/>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>Event Type Probabilities</text>
+		<font>Medium</font>
+	</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>RaidEnemyWeight</key>
+			<label>Raid Weight (Def: 7.4)</label>
+			<defaultValue>7.4</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>InfestationWeight</key>
+			<label>Infestation Weight (Def: 2.7)</label>
+			<defaultValue>2.7</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>ManhunterPackWeight</key>
+			<label>ManhunterPack Weight (Def: 2.0)</label>
+			<defaultValue>2.0</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>MechClusterWeight</key>
+			<label>Mech Cluster Weight (Def: 1.0)</label>
+			<defaultValue>1.0</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>MechClusterMinRefireDays</key>
+			<label>Minimum Days Between Mech Clusters (Def: 1.0)</label>
+			<defaultValue>1.0</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>AnimalInsanityMassWeight</key>
+			<label>Mass Animal Insanity Weight (Def: 1.3)</label>
+			<defaultValue>1.3</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>ProblemCauserWeight</key>
+			<label>Problem Causer Weight (Def: 0.95)</label>
+			<defaultValue>0.95</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>DefoliatorShipPartCrashWeight</key>
+			<label>Defoliator Ship Weight (Def: 0.2)</label>
+			<defaultValue>0.2</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>PsychicEmanatorShipPartCrashWeight</key>
+			<label>Psychic Droner Ship Weight (Def: 0.4)</label>
+			<defaultValue>0.4</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>WastepackInfestationWeight</key>
+			<label>Wastepack Infestation Weight (Def: 0.012)</label>
+			<defaultValue>0.012</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+	<li Class="XmlExtensions.Setting.GapLine"/>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>Faction Probabilities</text>
+		<font>Medium</font>
+	</li>
+	<li Class="XmlExtensions.Setting.SetColor">
+		<color>(255,255,0)</color>
+	</li>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>These are applied to each hostile faction individually. So if you set them all to 1 and there are 3 hostile tribal factions and only 1 mech faction, a tribal raid will be 3x as likely as a mech raid.</text>
+		<anchor>Middle</anchor>
+	</li>
+	<li Class="XmlExtensions.Setting.SetColor">
+		<color>(255,255,255)</color>
+	</li>
+
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>TribalWeight</key>
+			<label>Tribal Weight (Def: 1.0)</label>
+			<defaultValue>1.0</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>OutlanderWeight</key>
+			<label>Outlander Weight (Def: 1.0)</label>
+			<defaultValue>1.0</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>PirateWeight</key>
+			<label>Pirate Weight (Def: 1.0)</label>
+			<defaultValue>1.0</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>MechWeightRP700</key>
+			<label>Mech 700RP Weight (Def: 1.0)</label>
+			<defaultValue>1.0</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>MechWeightRP1400</key>
+			<label>Mech 1400RP Weight (Def: 1.8)</label>
+			<defaultValue>1.8</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>MechWeightRP2800</key>
+			<label>Mech 2800RP Weight (Def: 2.2)</label>
+			<defaultValue>2.2</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>MechWeightRP4000</key>
+			<label>Mech 4000RP Weight (Def: 2.6)</label>
+			<defaultValue>2.6</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+	<li Class="XmlExtensions.Setting.GapLine"/>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>Raid Type Probabilities</text>
+		<font>Medium</font>
+	</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>BreachWeight</key>
+			<label>Breach Weight (Def: 0.6)</label>
+			<defaultValue>0.6</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>MechBreachWeight</key>
+			<label>Mech Breach Weight (Def: 0.4)</label>
+			<defaultValue>0.4</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>SapperWeight</key>
+			<label>Sapper Weight (Def: 0.4)</label>
+			<defaultValue>0.4</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>SiegeWeight</key>
+			<label>Siege Weight (Def: 1.6)</label>
+			<defaultValue>1.6</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+	<li Class="XmlExtensions.Setting.GapLine"/>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>Arrival Type Probabilities</text>
+		<font>Medium</font>
+	</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>CenterDropWeight</key>
+			<label>Center Drop Weight (Def: 3.5)</label>
+			<defaultValue>3.5</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>MechCenterDropWeight</key>
+			<label>Mech Center Drop Weight (Def: 1.3)</label>
+			<defaultValue>1.3</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+
+	<li Class="XmlExtensions.Setting.GapLine"/>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>Cassandra Settings</text>
+		<font>Medium</font>
+	</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>Cassandra_minDaysPassed</key>
+			<label>Cassandra minDaysPassed (Def: 11.0)</label>
+			<defaultValue>11.0</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>Cassandra_onDays</key>
+			<label>Cassandra onDays (Def: 4.6)</label>
+			<defaultValue>4.6</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>Cassandra_offDays</key>
+			<label>Cassandra offDays (Def: 6.0)</label>
+			<defaultValue>6.0</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>Cassandra_minSpacingDays</key>
+			<label>Cassandra minSpacingDays (Def: 1.9)</label>
+			<defaultValue>1.9</defaultValue>
+			<min>0</min>
+			<max>10000</max>
+		</li>
+
+	<li Class="XmlExtensions.Setting.GapLine"/>
+	<li Class="XmlExtensions.Setting.Text">
+		<text>Psychic Droner Settings</text>
+		<font>Medium</font>
+	</li>
+
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>droner_low</key>
+			<label>Low Drone Negative Effect (Def: 12)</label>
+			<defaultValue>12</defaultValue>
+			<min>0</min>
+			<max>100</max>
+		</li>
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>droner_moderate</key>
+			<label>Moderate Drone Negative Effect (Def: 22)</label>
+			<defaultValue>22</defaultValue>
+			<min>0</min>
+			<max>100</max>
+		</li>
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>droner_high</key>
+			<label>High Drone Negative Effect (Def: 30)</label>
+			<defaultValue>30</defaultValue>
+			<min>0</min>
+			<max>100</max>
+		</li>
+		<li Class="XmlExtensions.Setting.Numeric">
+			<key>droner_extreme</key>
+			<label>Extreme Drone Negative Effect (Def: 40)</label>
+			<defaultValue>40</defaultValue>
+			<min>0</min>
+			<max>100</max>
+		</li>
+
+	<li Class="XmlExtensions.Setting.ResetSettings"/>
+</settings>
+</XmlExtensions.SettingsMenuDef>
+</Defs>
